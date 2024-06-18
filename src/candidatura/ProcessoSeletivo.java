@@ -11,7 +11,9 @@ public class ProcessoSeletivo{
 
     }
 
-   
+    static boolean atender(){
+        return new random().nextInt(3)==1;
+    }
 
     static void selecaoCadidato(){
         String[] candidatos = {"Felipe", "Lucas", "Marcia", "Paulo", "Augusto", "Monica", "Fabricio", "Mirela", "Daniela", "Jorge"}
