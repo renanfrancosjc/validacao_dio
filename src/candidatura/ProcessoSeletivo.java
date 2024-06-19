@@ -5,8 +5,27 @@ public class ProcessoSeletivo{
     public static void mais(String[] args){
       String[] candidatos = {"Felipe", "Lucas", "Marcia", "Paulo", "Augusto", "Monica", "Fabricio", "Mirela", "Daniela", "Jorge"}
       for(String candidato:candidatos){
-            System.out.println(" ")
+            entrandoEmContato(candidato);
+            int tentativaRealizada = 1;
+            boolean segueTentando = true;
+            boolean atendeu = false;
+            do{
+                atendeu = atender();
+                segueTentando = !atendeu
+
+                if(segueTentando){
+                    tentativaRealizada++
+                }else(System.out.println("Contato realizado"))
+
+            }while(segueTentando && tentativaRealizada <= 3);
+
+            if(atendeu)System.out.println("Proposta feita")
+            else()System.out.println("Não conseguimos contato")
       }
+
+    static void entrandoEmContato(String candidato){
+
+    }
 
 
     }
